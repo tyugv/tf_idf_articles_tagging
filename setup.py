@@ -7,9 +7,8 @@ setup(name="articles_tagging",
       package_dir={"articles_tagging": "src"},
       author='Milena',
       url='https://github.com/tyugv/tf_idf_articles_tagging',
+      install_requires=["joblib==1.1.0",
+                        "nltk==3.6.5",
+                        "pandas==1.3.4",
+                        "scikit-learn==1.0.1"]
       )
-
-_deps = ["joblib==1.1.0",
-         "nltk==3.6.5",
-         "pandas==1.3.4",
-         "scikit-learn==1.0.1"]

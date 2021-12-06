@@ -2,7 +2,7 @@ import pandas as pd
 from joblib import dump
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from preprocessing import preprocess_full_dataset
+from src.preprocessing import preprocess_full_dataset
 
 
 def training():

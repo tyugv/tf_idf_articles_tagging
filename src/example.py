@@ -1,8 +1,9 @@
 import os
 import sys
+from joblib import load
 
-from tagging import tagging
-from training import training
+from src.tagging import tagging
+from src.training import training
 
 
 if __name__ == '__main__':
