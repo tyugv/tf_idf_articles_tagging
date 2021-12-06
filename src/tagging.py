@@ -1,7 +1,7 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from joblib import load
 
-from src.preprocessing import preprocess
+from preprocessing import preprocess
 
 
 def tagging(text, tf_idf_model, max_value=0.15):

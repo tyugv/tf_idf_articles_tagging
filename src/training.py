@@ -2,7 +2,7 @@ import pandas as pd
 from joblib import dump
 from sklearn.feature_extraction.text import TfidfVectorizer
 
-from src.preprocessing import preprocess_full_dataset
+from preprocessing import preprocess_full_dataset
 
 
 def training():
@@ -10,7 +10,7 @@ def training():
 	data = preprocess_full_dataset(list(pd_data['Text']))
 
 	tf_idf = TfidfVectorizer().fit(data)
-	dump(tf_idf, '../model_weight/tf_idf.joblib')
+	dump(tf_idf, 'model_weight/tf_idf.joblib')
 
 
 if __name__ == '__main__':
