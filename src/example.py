@@ -1,4 +1,3 @@
-import os
 import sys
 
 from articles_tagging.tagging import tagging

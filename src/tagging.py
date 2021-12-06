@@ -1,5 +1,6 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
 from joblib import load
+import os
 
 from articles_tagging.preprocessing import preprocess
 
