@@ -1,14 +1,9 @@
 from sklearn.feature_extraction.text import TfidfVectorizer
-from joblib import load
-import os
 
 from articles_tagging.preprocessing import preprocess
 
 
-def tagging(text, max_value=0.15):
-    if 'tf_idf.joblib' not in os.listdir('model_weight'):
-        training()
-    tf_idf_model = load('model_weight/tf_idf.joblib')
+def tagging(text, tf_idf_model, max_value=0.15):
     text = preprocess(text)
     result = tf_idf_model.transform([text]).toarray()[0]
     tags = []
