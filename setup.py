@@ -3,6 +3,7 @@ from distutils.core import setup
 setup(name="articles_tagging",
       version="0.0.1",
       description='file: README.md',
+      packages=["articles_tagging"],
       author='Milena',
       url='https://github.com/tyugv/tf_idf_articles_tagging',
       )
