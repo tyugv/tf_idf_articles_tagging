@@ -130,6 +130,7 @@ dmypy.json
 
 # dataset
 *.csv
+data
 
 #model weights
 *.joblib
