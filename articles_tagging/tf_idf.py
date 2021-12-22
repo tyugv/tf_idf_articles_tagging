@@ -6,7 +6,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 from articles_tagging.preprocessing import preprocess, preprocess_full_dataset
 
-WEIGHTS_URL = 'https://raw.github.com/tyugv/tf_idf_articles_tagging/main/articles_tagging/model_weight/tf_idf.joblib'
+WEIGHTS_URL = 'https://raw.github.com/tyugv/tf_idf_articles_tagging/main/articles_tagging/model_weights/tf_idf.joblib'
 
 
 class TfIdf:
