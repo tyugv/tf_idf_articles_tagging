@@ -3,26 +3,19 @@ from nltk.corpus import stopwords, wordnet
 from nltk.tokenize import sent_tokenize, word_tokenize
 from nltk.stem import WordNetLemmatizer
 
+
 # nltk data download if not exist
-try:
-    nltk.find('tokenizers/punkt')
-except LookupError:
-    nltk.download('punkt')
+def download_nltk_library(name, path):
+    try:
+        nltk.find(path + '/' + name)
+    except LookupError:
+        nltk.download(name)
 
-try:
-    nltk.find('corpora/stopwords')
-except LookupError:
-    nltk.download('stopwords')
 
-try:
-    nltk.find('taggers/averaged_perceptron_tagger')
-except LookupError:
-    nltk.download('averaged_perceptron_tagger')
-
-try:
-    nltk.find('corpora/wordnet')
-except LookupError:
-    nltk.download('wordnet')
+download_nltk_library('punkt', 'tokenizers')
+download_nltk_library('stopwords', 'corpora')
+download_nltk_library('wordnet', 'corpora')
+download_nltk_library('averaged_perceptron_tagger', 'taggers')
 
 stopWords = set(stopwords.words('english'))
 stopWords.add('mr')
