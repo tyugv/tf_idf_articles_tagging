@@ -40,7 +40,6 @@ def get_wordnet_pos(word):
                 "R": wordnet.ADV}
     return tag_dict.get(tag, wordnet.NOUN)
 
-
 def clean_special_chars(text):
     return text.lower().translate(str.maketrans('', '', punct))
 

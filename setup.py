@@ -10,5 +10,6 @@ setup(name="articles_tagging",
       install_requires=["joblib==1.1.0",
                         "nltk==3.6.5",
                         "pandas",
-                        "scikit-learn==1.0.1"]
+                        "scikit-learn==1.0.1",
+                        "requests==2.26.0"]
       )
