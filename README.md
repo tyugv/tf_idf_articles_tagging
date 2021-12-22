@@ -12,5 +12,5 @@ pip install git+https://github.com/tyugv/tf_idf_articles_tagging.git
 ```
 from articles_tagging.tf_idf import TfIdf
 tf_idf = TfIdf()
-tf_idf.tagging('Some long article for test')
+tf_idf.tagging('Some long article for test. Hello world!')
 ```
